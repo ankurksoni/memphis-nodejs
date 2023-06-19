@@ -1,0 +1,18 @@
+{
+  "name": "memphis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "producer": "node ./src/producer/producer",
+    "consumer1": "node ./src/producer/consumer_1",
+    "consumer2": "node ./src/producer/consumer_2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "memphis-dev": "^1.0.5"
+  }
+}
