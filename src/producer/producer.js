@@ -18,9 +18,9 @@ const config = require('../../config/config.json');
 
         const headers = memphis.headers()
         headers.add('key', 'value')
-        
+
         for (let i = 0; i < 10; i++) {
-            let JSONPayload = { "id": i,"name": "Ankur", "score": 200 };
+            let JSONPayload = { "id": i, "name": `Ankur_${i}`, "score": 200 };
             await producer.produce({
                 message: Buffer.from(JSON.stringify(JSONPayload)), // you can also send JS object - {}
                 headers: headers

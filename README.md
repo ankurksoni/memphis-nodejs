@@ -1,4 +1,4 @@
-# Simple up and running example of memphis.dev using javascript in Node.js
+# Simple example of memphis.dev using Node.js
 
 ## Pre-requisite
 
@@ -9,8 +9,9 @@ Make sure you have installed below,
 ## Steps for local setup
 
 * Just take a clone of this project.
+* Run `npm ci`
 * Run `docker-compose up -d`.
-* Goto http://localhost:9000 and create a station with name `scorecard` and attach a schema `scorecard_schema` (you can see the option to attach schema), set username and password as `scorecard`.
+* Goto http://localhost:9000 and create a station with name `scorecard` and attach a schema `scorecard_schema` (you can see the option to attach schema), set username `root` and password as `memphis`.
     * Use this schema as follows,
         ```json
         {
